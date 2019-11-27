@@ -1,0 +1,26 @@
+/**
+ *
+ */
+repositories {
+  mavenCentral()
+}
+
+apply plugin: 'java'
+
+version = '0.1.0'
+
+ext {
+  slf4jVersion = '1.7.26'
+  projectLombokVersion = '1.16.20'
+  commonsBeanUtilsVersion = '1.9.3'
+  javaMail = '1.6.2'
+}
+
+dependencies {
+  compile "org.slf4j:slf4j-api:$slf4jVersion"
+  runtime "org.slf4j:slf4j-log4j12:$slf4jVersion"
+  compile "org.projectlombok:lombok:$projectLombokVersion"
+  compile "commons-beanutils:commons-beanutils:$commonsBeanUtilsVersion"
+
+  testCompile 'junit:junit:4.12'
+}
