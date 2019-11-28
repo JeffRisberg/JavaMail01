@@ -7,9 +7,7 @@ import javax.mail.Message.RecipientType;
 import java.util.Properties;
 
 /**
- * This program demonstrates how to get e-mail messages from a POP3/IMAP server
- *
- * @author www.codejava.net
+ * Get e-mail messages from a POP3/IMAP server
  */
 @Slf4j
 public class EmailReceiver {
