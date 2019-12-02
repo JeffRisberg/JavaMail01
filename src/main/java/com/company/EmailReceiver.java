@@ -20,8 +20,7 @@ public class EmailReceiver {
    * @param port
    * @return a Properties object
    */
-  private Properties getServerProperties(String protocol, String host,
-                                         String port) {
+  private Properties getServerProperties(String protocol, String host, String port) {
     Properties properties = new Properties();
 
     // server setting
@@ -153,7 +152,6 @@ public class EmailReceiver {
     String protocol = "imap";
     String host = "imap.gmail.com";
     String port = "993";
-
 
     String userName = "your_email_address";
     String password = "your_email_password";
