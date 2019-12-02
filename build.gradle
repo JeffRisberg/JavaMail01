@@ -14,6 +14,8 @@ ext {
   projectLombokVersion = '1.16.20'
   commonsBeanUtilsVersion = '1.9.3'
   javaMailVersion = '1.6.2'
+
+  junitVersion = '4.12'
 }
 
 dependencies {
@@ -25,5 +27,5 @@ dependencies {
 
   compile "com.sun.mail:javax.mail:$javaMailVersion"
   
-  testCompile 'junit:junit:4.12'
+  testCompile "junit:junit:$junitVersion"
 }
